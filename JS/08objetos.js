@@ -12,7 +12,14 @@ const producto = {
 }
 
 
+// console.log(producto.nombreProducto);
+// console.log(producto.precio);//de esta manera se accede a los datos
+// console.log(producto["precio"]);//asi tambien pero menos usada
+
+//agregar nueva propiedades
+producto.imagen = "imagen.jpg";
+
+
+//elimianr propiedades
+delete producto.disponible;
 console.log(producto);
-console.log(producto.nombreProducto);
-console.log(producto.precio);//de esta manera se accede a los datos
-console.log(producto["precio"]);//asi tambien pero menos usada
