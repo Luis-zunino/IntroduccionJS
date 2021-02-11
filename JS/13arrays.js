@@ -1,4 +1,5 @@
-const meses = [enero, febrero, marzo, abril, mayo];
+//Array methods
+const meses = ["enero", "febrero", "marzo", "abril", "mayo"];
 
 const carritos = [
   { nombre: "monitor de 20 pulgadas", precio: 500 },
@@ -13,5 +14,24 @@ const carritos = [
 
 //for Each
 meses.forEach(function (mes) {
-  console.log(mes);
+  if (mes == "marzo") {
+    console.log("Marzo si existe");
+  }
 });
+
+//Includes sirve para arreglos planos
+let resultado = meses.includes("marzo");
+console.log(resultado);
+
+//Some ideal para arreglos de objetos
+resultado = carritos.some((producto) => producto.nombre === "celular");
+
+//reduce toma todo los numeros y devuelve un resultado
+resultado = carritos.reduce((total, producto) => total + producto.precio, 0);
+
+//filter
+resultado = carritos.filter((producto) => producto.precio > 400);
+
+resultado = carritos.filter((producto) => producto.nombre !== "celular");
+
+console.log(resultado);

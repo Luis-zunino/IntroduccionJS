@@ -5,7 +5,7 @@
 
 const numeros = [10, 20, 30, 40];
 
-const meses = [enero, febrero, marzo, abril, mayo];
+const meses = ["enero", "febrero", "marzo", "abril", "mayo"];
 console.table(meses);
 //acceder a los valores de un arreglo
 console.log(numeros[4]);
