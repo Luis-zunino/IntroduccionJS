@@ -3,7 +3,7 @@
 function sumar() {
   console.log(10 + 10);
 }
-sumar();
+sumar();//no se puede utilizar arrow functions
 
 //expresion de la funcion
 
